@@ -6,7 +6,7 @@ COPY requirements.txt .
 
 RUN pip intall --no-chache-dir -r requirements.txt
 
-COPY . .
+COPY app.py .
 
 EXPOSE 5000
 
