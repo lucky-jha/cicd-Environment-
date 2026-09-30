@@ -25,7 +25,7 @@ jobs:
                 context: .
                 push: true
                 tags: |
-                 ${{ vars.DOCKERHUB_USERNAME }}/cicd-enviorment:${{ github.sha }}
+                 ${{ vars.DOCKER_USERNAME }}/cicd-enviorment:${{ github.sha }}
                  ${{ vars.DOCKERHUB_USERNAME }}/cicd-enviorment:latest
 
     deploy-dev-job:
