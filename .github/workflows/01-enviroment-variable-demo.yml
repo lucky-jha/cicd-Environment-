@@ -69,7 +69,6 @@ jobs:
               run: docker logs cicd-enviorment
 
     deploy-prod-job:
-
         name: Deploy to PRODUCTION
         if: github.ref == 'main' #its specify git branch
         needs: build-job
